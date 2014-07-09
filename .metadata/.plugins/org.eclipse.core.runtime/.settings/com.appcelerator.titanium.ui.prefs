@@ -1,5 +1,13 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1404758504239
+1st\ try\:launchMode=debug
+1st\ try\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
+Dorosh_Ian_Project1\:launchMode=run
+Dorosh_Ian_Project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch 64-bit)
+LAST_LAUNCH_TIMESTAMP=1404848025208
+My\ First\ Project\:launchMode=run
+My\ First\ Project\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
+akjhvkajh\:launchMode=run
+akjhvkajh\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103

@@ -1,0 +1,31 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var mainWindow = Ti.UI.createWindow({
+	title: "My First App",
+	backgroundColor: "#fff",
+});
+
+var view = Ti.UI.createView({
+	backgroundColor: "#333",
+	borderRadius:2,
+	borderWidth: 1,
+	top: 50,
+	left: 20,
+	right : 20,
+	bottom : 100
+});
+
+var previousButton = Ti.UI.createView({
+	backgroundColor: "##D3D3E2",
+	borderRadius: 2,
+	borderWidth: 1,
+	width: 150,
+	hight: 50,
+	left: 20,
+	bottom: 25,
+});
+
+mainWindow.add(previousButton);
+mainWindow.add(view);
+mainWindow.open();
+  

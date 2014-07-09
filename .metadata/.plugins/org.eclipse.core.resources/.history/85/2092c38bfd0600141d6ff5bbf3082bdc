@@ -1,0 +1,107 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var carTypes = ["Lamborgini Aventador", "Ferrari 458", "Audi R8", "Mclaren P1", "Aston Martin DB9", "Maserati GT", "Bugatti Veyron", "Koenigsegg Agera", "Pegani Huayra", "Mercedes SLK" ];
+var listCars = 0;
+
+var mainWindow = Ti.UI.createWindow({
+	title: "My First App",
+	backgroundColor: "#fff",
+});
+
+var mainView = Ti.UI.createView({
+	backgroundColor: "#333",
+	borderRadius:2,
+	borderWidth: 1,
+	top: 50,
+	left: 20,
+	right : 20,
+	bottom : 100
+});
+
+
+var behindMainView = Ti.UI.createView({
+	backgroundColor: "#00259d",
+	borderRadius:2,
+	borderWidth: 1,
+	borderColor: "00259d",
+	top: 60,
+	left: 15,
+	right : 15,
+	bottom : 110
+});
+
+
+var previousButton = Ti.UI.createView({
+	backgroundColor: "#00259d",
+	borderRadius: 2,
+	borderWidth: 1,
+	width: 130,
+	height: 50,
+	left: 20,
+	bottom: 25,
+});
+
+var nextButton = Ti.UI.createView({
+	backgroundColor: "#00259d",
+	borderRadius: 2,
+	borderWidth: 1,
+	width: 130,
+	height: 50,
+	right: 20,
+	bottom: 25,
+});
+
+var previousButtonText = Ti.UI.createLabel({
+	text: "Previous",
+	color: "#fff",
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"}
+});
+
+var nextButtonText = Ti.UI.createLabel({
+	text: "Next",
+	color: "#fff",
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"}
+});
+
+var mainText = Ti.UI.createLabel({
+	text: "Top Ten Cars",
+	color: "#fff",
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"}
+});
+
+var next = function(){
+	listCars++;
+	if (listCars >= carTypes.length) {
+		listCars = 0;
+		mainText.text = carTypes[listCars];
+	} else {		
+		mainText.text = carTypes[listCars];	
+	};
+};
+
+var previous = function(){
+	if (listCars <= 0) {
+		listCars = carTypes.length - 1;
+		mainText.text = carTypes[listCars];
+	} else {
+		listCars--;		
+		mainText.text = carTypes[listCars];	
+	};
+};
+
+var firstItem = function(){
+	mainText.text = carTypes[0];
+};
+
+
+loadFile.FirstItem();
+nextButton.addEventListener("click", next);
+previousButton.addEventListener("click", previous); 
+
+
+mainWindow.add(behindMainView, mainView, previousButton, nextButton);
+previousButton.add(previousButtonText); 
+nextButton.add(nextButtonText);
+mainView.add(mainText);
+mainWindow.open();
+  
