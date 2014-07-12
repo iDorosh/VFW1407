@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Numbers/Resources/numbers.js&apos; to &apos;thirdScreen.js&apos;" description="Rename resource &apos;numbers.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/numbers.js" name="thirdScreen.js" stamp="1405045199352" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Numbers/Resources/thirdScreen.js&apos; to &apos;thirdWindow.js&apos;" description="Rename resource &apos;thirdScreen.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/thirdScreen.js" name="thirdWindow.js" stamp="1405045254239" updateReferences="true"/>
+</session>
