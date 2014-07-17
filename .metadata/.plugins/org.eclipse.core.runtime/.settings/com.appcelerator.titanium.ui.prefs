@@ -4,7 +4,9 @@
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
 Dorosh_Ian_Project1\:launchMode=run
 Dorosh_Ian_Project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
-LAST_LAUNCH_TIMESTAMP=1405118962463
+Dorosh_Ian_Project2\:launchMode=run
+Dorosh_Ian_Project2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
+LAST_LAUNCH_TIMESTAMP=1405634978935
 My\ First\ Project\:launchMode=run
 My\ First\ Project\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
 Numbers\:launchMode=run
