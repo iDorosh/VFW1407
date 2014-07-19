@@ -97,7 +97,6 @@ var detail = function(){
 	});
 	
 	navWindow.openWindow(detailWindow);
-	navWindow.open();
 	
 	detailTextBackground.add(detailText);
 	detailWindow.add(behindDetailTextBackground, detailTextBackground, pictures);
