@@ -5,16 +5,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="wholeword"/>
-		<item value="numbers" key="selection"/>
+		<item value="gallary" key="selection"/>
 		<list key="findhistory">
+			<item value="gallary"/>
+			<item value="gallaryView"/>
+			<item value="galary view"/>
+			<item value="mainWindow"/>
+			<item value="secondWindow"/>
+			<item value="nav"/>
+			<item value="navWindow.openWindow(detailWindow);"/>
 			<item value="numbers"/>
-			<item value="types of cars"/>
-			<item value="super cars"/>
-			<item value="desc"/>
-			<item value="table"/>
-			<item value="number"/>
-			<item value="carTypes"/>
-			<item value="listCars"/>
 		</list>
 	</section>
 </section>

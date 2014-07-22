@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Dorosh_Ian_Project3/Resources/photos/20130610_203809.jpeg&apos; to &apos;Plane.jpeg&apos;" description="Rename resource &apos;20130610_203809.jpeg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/photos/20130610_203809.jpeg" name="Plane.jpeg" stamp="1405986829891" updateReferences="true"/>
+</session>
