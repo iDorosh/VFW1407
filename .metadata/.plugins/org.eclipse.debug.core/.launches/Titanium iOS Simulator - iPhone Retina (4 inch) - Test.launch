@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.simulator.launchConfigurationType">
-<stringAttribute key="ATTR_PROJECT_NAME" value="Test"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="test"/>
 <stringAttribute key="device_id" value="iPhone Retina (4 inch)"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Test"/>
+<listEntry value="/test"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>

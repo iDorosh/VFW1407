@@ -5,16 +5,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="wholeword"/>
-		<item value="gallary" key="selection"/>
+		<item value="#023348" key="selection"/>
 		<list key="findhistory">
+			<item value="#023348"/>
+			<item value="#898b8c"/>
+			<item value="addmultiplyButton"/>
+			<item value="signsWindow"/>
+			<item value="image"/>
 			<item value="gallary"/>
 			<item value="gallaryView"/>
 			<item value="galary view"/>
-			<item value="mainWindow"/>
-			<item value="secondWindow"/>
-			<item value="nav"/>
-			<item value="navWindow.openWindow(detailWindow);"/>
-			<item value="numbers"/>
 		</list>
 	</section>
 </section>

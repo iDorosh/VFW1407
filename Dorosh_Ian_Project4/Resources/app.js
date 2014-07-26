@@ -1,64 +1,113 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
 
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+var mainWindow = Ti.UI.createWindow({
+	title: "Cars",
+	backgroundColor: "#3d3d3e",
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+
+
+
+
+
+
+var galleryButton = Ti.UI.createView({
+	top: 0,
+	backgroundColor: "128dff",
+	height: 100,
 });
 
-win1.add(label1);
-
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+var galleryText = Ti.UI.createLabel({
+	text: "Gallery",
+	color: "#fff",
+	left: 30,
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"},
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+
+galleryButton.addEventListener("click", function(open){
+	navWindow.openWindow(galleryView);
 });
 
-win2.add(label2);
+galleryView = Ti.UI.createWindow({
+	title: "Gallery",
+	backgroundColor: "#fff",
+});
 
 
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
 
 
-// open tab group
-tabGroup.open();
+
+
+var dataPageButton = Ti.UI.createView({
+	top: galleryButton.top+galleryButton.height,
+	backgroundColor: "0b5fad",
+	height: 100,
+});
+
+var dataPageText = Ti.UI.createLabel({
+	text: "Data",
+	color: "#fff",
+	left: 30,
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+dataPageButton.addEventListener("click", function(open){
+	navWindow.openWindow(dataView);
+	
+});
+
+dataView = Ti.UI.createWindow({
+	title: "Data",
+	backgroundColor: "#fff",
+});
+
+
+
+
+
+var customizeButton = Ti.UI.createView({
+	top: dataPageButton.top+dataPageButton.height,
+	backgroundColor: "0c4375",
+	height: 100,
+});
+
+var customizeButtonText = Ti.UI.createLabel({
+	text: "Customize",
+	color: "#fff",
+	left: 30,
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+customizeButton.addEventListener("click", function(open){
+	navWindow.openWindow(customizeView);
+});
+
+
+customizeView = Ti.UI.createWindow({
+	title: "Customize",
+	backgroundColor: "#fff",
+});
+
+
+
+var mainWindowLabel = Ti.UI.createLabel({
+	text: "1407 Ian Dorosh",
+	color: "#fff",
+	top: customizeButton.top+customizeButton.height+ 20,
+	font: {fontSize: 12, fontFamily: "Helvetica", fontWeight: "light"},
+});
+
+
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow,
+});
+
+customizeButton.add(customizeButtonText);
+dataPageButton.add(dataPageText);
+galleryButton.add(galleryText);
+mainWindow.add(galleryButton, dataPageButton, customizeButton, mainWindowLabel);
+navWindow.open();

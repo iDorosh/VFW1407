@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LogiX/Resources/+|x.js&apos; to &apos;signs.js&apos;" description="Rename resource &apos;+|x.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/+|x.js" name="signs.js" stamp="1406242033908" updateReferences="true"/>
+</session>
