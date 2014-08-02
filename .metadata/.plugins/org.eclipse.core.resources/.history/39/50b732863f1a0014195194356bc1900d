@@ -1,0 +1,37 @@
+var openData = function(){
+	dataView = Ti.UI.createWindow({
+		title: "Data",
+		backgroundColor: "#fff",
+		fullscreen: true,
+		url:"cars.js"
+	});
+	navWindow.openWindow(dataView);
+};
+
+dataPageButton.addEventListener("click", openData);
+
+var openSettings = function(){
+	customizeView = Ti.UI.createWindow({
+		title: "Customize",
+		backgroundColor: "#fff",
+		fullscreen: true,
+		url: "settings.js",
+	});
+	navWindow.openWindow(customizeView);
+};
+
+customizeButton.addEventListener("click", openSettings);
+
+var openGallery = function(){	
+	var galleryView = Ti.UI.createWindow({
+		title: "Gallery",
+		backgroundColor: "#3d3d3e",
+		fullscreen: true,
+		url: "carGallery.js"
+	});
+	navWindow.openWindow(galleryView);
+};
+
+galleryButton.addEventListener("click", openGallery);
+	
+var loadFile = require("cars");

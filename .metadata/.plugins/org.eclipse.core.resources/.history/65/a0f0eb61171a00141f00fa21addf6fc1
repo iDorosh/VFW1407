@@ -1,0 +1,49 @@
+var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "photos");
+var imageFiles = imagesFolder.getDirectoryListing();
+
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+
+var currentWindow = Ti.UI.currentWindow;
+var previousNum;
+
+var newImage = Ti.UI.createImageView({
+			title: imageFiles,
+			image: "photos/",
+		});
+var random = function(){
+		
+		number = Math.floor(Math.random()*10);
+		while(number == previousNum){
+			number = Math.floor(Math.random()*10);
+		}
+		previousNum = number;
+		newImage.title = imageFiles[number];
+		newImage.image = "photos/" + imageFiles[number];
+		
+};
+		currentWindow.title = newImage.title;
+		currentWindow.add(newImage);
+	
+
+var nextPicButton = Ti.UI.createView({
+			height: 50,
+			width: pWidth,
+			bottom: 0,
+			backgroundColor: "#000",
+		});
+		
+		var nextPicButtonLabel = Ti.UI.createLabel({
+			text: "Next Image",
+			color: "fff",
+			font: {fontSize: 18, fontFamily: "Helvetica"},
+		});
+		
+
+
+nextPicButton.addEventListener("click", random);
+	random();
+	nextPicButton.add(nextPicButtonLabel);
+	currentWindow.add(nextPicButton);
+
+

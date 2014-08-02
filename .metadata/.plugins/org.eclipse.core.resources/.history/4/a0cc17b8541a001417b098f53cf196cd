@@ -1,0 +1,54 @@
+var currentWindow = Ti.UI.currentWindow;
+
+var picker = Ti.UI.createPicker({
+  top:30
+});
+
+var data = [];
+data[0]=Ti.UI.createPickerRow({title:'Lamborgini Aventador'});
+data[1]=Ti.UI.createPickerRow({title:'Ferrari Enzo'});
+data[2]=Ti.UI.createPickerRow({title:'Audi R8'});
+data[3]=Ti.UI.createPickerRow({title:'Aston Martin DB9'});
+
+picker.add(data);
+picker.selectionIndicator = true;
+
+currentWindow.add(picker);
+
+picker.setSelectedRow(0, 2, false); 
+
+var select = Ti.UI.createLabel({
+	top:15,
+	text: "Choose Your Car",
+	color: "#0c4375",
+	font: {fontSize: 20, fontFamily: "Helvetica", fontWeight: "light"},
+});
+
+var picker2 = Ti.UI.createPicker({
+  top:250,
+});
+
+var data2 = [];
+data[0]=Ti.UI.createPickerRow({title:'3.0L'});
+data[1]=Ti.UI.createPickerRow({title:'3.5L'});
+data[2]=Ti.UI.createPickerRow({title:'5.0L'});
+data[3]=Ti.UI.createPickerRow({title:'6.2L'});
+
+picker2.add(data);
+picker2.selectionIndicator = true;
+
+currentWindow.add(picker2);
+
+picker2.setSelectedRow(0, 2, false); 
+
+var selectEngine = Ti.UI.createLabel({
+	top:300,
+	text: "Choose Your Engine Size",
+	color: "#0c4375",
+	font: {fontSize: 20, fontFamily: "Helvetica", fontWeight: "light"},
+});
+
+
+
+currentWindow.add(select, selectEngine);
+

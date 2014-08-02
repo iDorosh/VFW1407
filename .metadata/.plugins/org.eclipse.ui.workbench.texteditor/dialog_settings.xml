@@ -2,19 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="#023348" key="selection"/>
+		<item value="console" key="selection"/>
 		<list key="findhistory">
-			<item value="#023348"/>
-			<item value="#898b8c"/>
-			<item value="addmultiplyButton"/>
+			<item value="console"/>
+			<item value="console.log"/>
+			<item value="again"/>
+			<item value="timer"/>
+			<item value="timerTest"/>
+			<item value="answersLabel"/>
+			<item value="space"/>
 			<item value="signsWindow"/>
-			<item value="image"/>
-			<item value="gallary"/>
-			<item value="gallaryView"/>
-			<item value="galary view"/>
 		</list>
 	</section>
 </section>

@@ -7,7 +7,7 @@
 <stringAttribute key="certificate" value="Ian Dorosh (4N46ED86YH)"/>
 <stringAttribute key="debug_config" value="::1406303543996:192.168.1.2"/>
 <stringAttribute key="debug_hosts" value="192.168.1.2"/>
-<stringAttribute key="device_id" value="0e3cb27a3ad9d4b9ff2e543bcb0d2eba9d428ba3"/>
+<stringAttribute key="device_id" value="bdde367a408e6e9bb4eed2aed9a491e61014b355"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/LogiX"/>
 </listAttribute>
@@ -18,5 +18,5 @@
 <booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
 <stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
 <stringAttribute key="sdk_version" value="7.1"/>
-<stringAttribute key="uuid" value="19D71DDE-C099-4E2C-931A-E8498F47685D"/>
+<stringAttribute key="uuid" value="D552CABF-33B8-4D45-A826-61C28B33FA8B"/>
 </launchConfiguration>

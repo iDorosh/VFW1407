@@ -1,3 +1,3 @@
-FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Thu Jul 24 21\:04\:49 CDT 2014\n9\=secondWindow\n8\=mainWindow\n7\=galary view\n6\=gallaryView\n5\=gallary\n4\=image\n3\=signsWindow\n11\=navWindow.openWindow(detailWindow);\n2\=addmultiplyButton\n10\=nav\n1\=\\\#898b8c\n0\=\\\#023348\n
-FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Thu Jul 24 21\:04\:49 CDT 2014\n8\=number\n7\=equations\n6\=photoView\n5\=gallaryView\n4\=answersWindow\n3\=playRight\n2\=\\\#023348\n1\=\\\#898b8c\n0\=\\\#01b4ff\n
+FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Sat Aug 02 13\:42\:18 CDT 2014\n9\=sings\n8\=signs\n7\=signsWindow\n6\=space\n5\=answersLabel\n4\=timerTest\n3\=timer\n2\=again\n1\=console.log\n0\=console\n
+FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Tue Jul 29 20\:13\:50 CDT 2014\n9\=playRight\n8\=\\\#023348\n7\=\\\#898b8c\n6\=\\\#01b4ff\n5\=tapright.mp3\n13\=number\n4\=answersResults\n12\=equations\n3\=answersScore\n11\=photoView\n2\=answersHighScore\n10\=gallaryView\n1\=answersSigns\n0\=answersWindow\n
 eclipse.preferences.version=1

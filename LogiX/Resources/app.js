@@ -8,20 +8,26 @@ var trueCanvasWidth = pWidth-margin;
 var size = trueCanvasWidth;
 
 
+
 var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#01b4ff",
 	title: "LogiX", 
-	statusBarStyle:Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK,
+	fullscreen: true,
 });
 
+var copyright = Ti.UI.createLabel({
+	text: "© Ian Dorosh 2014",
+	color: "#898b8c",
+	font: {fontSize: 12, fontFamily: "Helvetica", fontWeight: "light"},
+	bottom: 10,
+	
+});
 
 
 var mainView = Ti.UI.createView({
 	backgroundColor: "#023348",
-	top: 20,
-	left: 5,
-	bottom: 5,
-	right: 5, 
+	
+	
 });
 
 var logo = Ti.UI.createView({
@@ -80,6 +86,7 @@ var addmultiplyButton = Ti.UI.createView({
 	top: "70%",
 
 });
+
 
 var playLeft = Ti.UI.createLabel({
 	text: " | ✕",
@@ -144,7 +151,7 @@ var loadFile = require("answer");
 logo.add(plusLogo,lLogo, lLogo2, logixLogo, xLogo);
 twonumbersButton.add(playRight);
 addmultiplyButton.add(playLeft, playLeft1);
-mainWindow.add(mainView, logo, addmultiplyBackground, addmultiplyButton, twonumbersBackground, twonumbersButton);
+mainWindow.add(mainView, logo, addmultiplyBackground, addmultiplyButton, twonumbersBackground, twonumbersButton, copyright);
 mainWindow.open({
 	transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT
 });
